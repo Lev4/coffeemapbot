@@ -5,7 +5,7 @@ from utils.misc.calc_distance import choose_shortest
 from loader import dp, bot
 
 
-@dp.message_handler(Command("show_on_map"))
+@dp.message_handler(Command("show_coffee_near"))
 async def share_number(message: types.Message):
     await message.answer(f"Привет, {message.from_user.full_name}.\n"
                          f"Для того, чтобы показать ближайшие кофейни отправь свою локацию "
